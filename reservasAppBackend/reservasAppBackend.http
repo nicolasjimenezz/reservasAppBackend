@@ -1,0 +1,71 @@
+﻿@reservasAppBackend_HostAddress = https://localhost:7086
+
+# POST {{reservasAppBackend_HostAddress}}/todoitems
+# Content-Type: application/json
+
+# {
+#   "name":"walk dog",
+#   "isComplete":true
+# }
+
+# ###
+
+# GET {{reservasAppBackend_HostAddress}}/todoitems
+
+# ###
+
+# @id=1
+# GET {{reservasAppBackend_HostAddress}}/todoitems/{{id}}
+
+# ###
+
+# @id=1
+# PUT {{reservasAppBackend_HostAddress}}/todoitems/{{id}}
+# Content-Type: application/json
+
+# {
+#   "name":"feed fish",
+#   "isComplete":false
+# }
+
+# ###
+
+# DELETE {{reservasAppBackend_HostAddress}}/todoitems/1
+
+# ###
+
+
+
+GET {{reservasAppBackend_HostAddress}}/dates
+
+###
+
+POST {{reservasAppBackend_HostAddress}}/dates
+Content-Type: application/json
+
+{
+    "Id": 3,
+    "BookingDate" : "2025-01-31T12:00:00Z",
+    "IdRegisteredUser" : 1
+}
+
+
+###
+
+GET {{reservasAppBackend_HostAddress}}/users
+
+###
+
+POST {{reservasAppBackend_HostAddress}}/users
+Content-Type: application/json
+
+{
+ "Id" : 4,
+ "Username" : "invitado",
+ "UserPassword" : "invitado"
+}
+
+###
+DELETE {{reservasAppBackend_HostAddress}}/dates/{{id}}
+
+###
